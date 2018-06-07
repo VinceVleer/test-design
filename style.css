@@ -1,0 +1,356 @@
+body {
+    background-color: white;
+    padding-top:40px;
+    margin:0px;
+}
+
+/*----------center content--------*/
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*----------header---------*/
+
+div.header {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    color: #666666;
+    font-family: "Arial";
+    height:40px;
+    width:150px;
+}
+
+nav {
+    position: relative;
+    top: -50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+}
+
+a {
+    color: #666666;
+    font-family: "Arial";
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+/*----------grey boxes top--------*/
+
+.featured-products {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 500px;
+  }
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+  }
+  
+.flex-container-2 > div {
+    background-color: #bdbdbd;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.flex-container-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+  }
+  
+.flex-container-3 > .grey-box-3 {
+    background-color: #bdbdbd;
+    margin: 10px;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+.flex-container-4 {
+    display: flex;
+    background-color: white;
+  }
+  
+.flex-container-4 > div {
+    background-color: #bdbdbd;
+    margin: 10px;
+    font-size: 30px;
+    height: 250px;
+}
+
+.box-1 {
+    flex:1;
+}
+
+.box-2 {
+    flex:2;
+}
+
+.box-3 {
+    flex:1;
+}
+
+.box-4 {
+    flex:1;
+}
+
+.grey-box-1 {
+    flex:2;
+}
+
+.grey-box-2 {
+    flex:1;
+}
+
+.grey-box-3 {
+    flex:1;
+}
+
+.grey-box-4 {
+    flex:1;
+}
+
+.grey-box-5 {
+    flex:1;
+}
+
+.box__image {
+    width: 314px;
+    height: 307px;
+    object-fit: cover;
+}
+
+/*----------text--------*/
+
+h3 {
+    color: #666666;
+    font-family: "Arial";
+    font-size: 25px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+p.solid {
+    border-style: solid;
+    border-width: 2px 2px 2px 10px;
+    border-color: #bbbbbb;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: center;
+    color: #666666;
+    font-family: "Arial";
+}
+
+/*----------progress boxes--------*/
+
+.progress-container-1 {
+    display: flex;
+    background-color: white;
+}
+
+.progress-container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.progress-container-3 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+/*
+.progress-container-3 > div {
+
+    background-color: #bdbdbd;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 50px;
+
+}
+*/
+
+.progress-box-1 {
+    flex:1;
+}
+
+.progress-box-2 {
+    flex:1;
+}
+
+.progress-box-3 {
+    flex:1;
+}
+
+.progress-box-4 {
+    flex:1;
+}
+
+.progress-box-5 {
+    flex:1;
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+/*----------form boxes--------*/
+
+.form-container-1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.form-container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+  
+.form-container-2 > div {
+    background-color: #bdbdbd;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.form-box-1 {
+    flex:1;
+}
+
+.form-box-2 {
+    flex:1;
+}
+
+.form-box-3 {
+    flex:1;
+}
+
+.form-box-4 {
+    flex:1;
+}
+
+.form-box-5 {
+    flex:1;
+}
+
+.form-box-6 {
+    flex:1;
+}
+
+.form-box-7 {
+    flex:1;
+}
+
+.form-container-3 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+  
+/*
+.form-container-3 > .form-box-3 {
+    background-color: #bdbdbd;
+    margin: 10px;
+    height: 200px;
+}
+*/
+
+.form-container-4 {
+    display: flex;
+    flex-direction: row;
+    /*background-color: red;*/
+    height: 210px;
+}
+  
+.form-container-4 > div {
+    background-color: #bdbdbd;
+    margin: 10px;
+}
+
+.form-container-5 {
+    display: flex;
+    flex-direction: column;
+    /*background-color: blue;*/
+    height: 210px;
+}
+
+.form-container-5 > div {
+    background-color: white;
+    margin: 10px;
+}
+  
+.form-container-5 > div.form-box-5 {
+    background-color: #bdbdbd;
+    margin: 10px;
+}
+
+.form {
+    background-color:rgb(65, 65, 65);
+    width: 150px;
+    height:50px;
+    margin-left: 330px;
+}
+
+.checkBox {
+    margin-left: 10px;
+}
+
+.checkBoxText {
+    margin-left: 5px;
+    font-family: "Arial";
+}
+
+/*----------footer--------*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(65, 65, 65);
+    color: rgb(184, 184, 184);
+    font-family: "Arial";
+}
+
+.footer > div {
+    margin-left:270px;
+    margin-top: 25px;
+}
+
+.copyright {
+    margin-right: 680px;
+}
+
+.footer-box {
+    background-color:rgb(184, 184, 184);
+    padding: 5px 30px 5px 30px;
+    margin-right: 20px;
+}
+
+progress {
+    width: 220px;
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
