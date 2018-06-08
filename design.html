@@ -13,50 +13,49 @@
     <!--navlinks-->
 
     <nav>
-            <a href="https://www.google.nl/">Nav link</a> 
-            <a href="https://www.google.nl/">Nav link</a> 
-            <a href="https://www.google.nl/">Nav link</a> 
-            <a href="https://www.google.nl/">Nav link</a>
+        <a href="https://www.google.nl/">Nav link</a> 
+        <a href="https://www.google.nl/">Nav link</a> 
+        <a href="https://www.google.nl/">Nav link</a> 
+        <a href="https://www.google.nl/">Nav link</a>
     </nav>
 
     <!--grey boxes top-->
 
     <div class="featured-products">
 
-            <div class="box-1">
-                    <div class="flex-container-2">
-                            <div class="grey-box-1">
+            <div class="featured-products__column">
+
+                    <div class="featured-products__column--left">
+
+                            <div class="featured-products__item">
                                 <img class="box__image" src="mario.jpg" alt="Mario">
                             </div>
-                            <div class="grey-box-2">
-                                <h3>2</h3>
+
+                            <div class="featured-products__item--small">
+                                <img class="box__image--small" src="mario.jpg" alt="Mario">
                             </div>
                     </div>
             </div>
             
-            <div class="box-2">
+            <div class="featured-products__column">
 
-                    <div class="flex-container-3">
+                    <div class="featured-products__column--right">
 
-                            <div class="grey-box-3">
-                                <h3>3</h3>
+                            <div class="featured-products__item--large">
+                                <img class="box__image--large" src="mario.jpg" alt="Mario">
                             </div>
                             
-                            <div class="box-4">
+                            <div class="featured-products__wrapper">
 
-                                <div class="flex-container-4">
+                                <div class="featured-products__column--bottom">
 
-                                <div class="grey-box-4">
+                                    <div class="featured-products__item">
+                                        <img class="box__image" src="chrome.jpg" alt="Chrome">
+                                    </div>
 
-                                    <h3>4</h3>
-
-                                </div>
-
-                                <div class="grey-box-5">
-
-                                    <h3>5</h3>
-    
-                                </div>
+                                    <div class="featured-products__item">
+                                        <img class="box__image" src="chrome.jpg" alt="Chrome">
+                                    </div>
 
                                 </div>
 
@@ -68,7 +67,7 @@
 
     <!--box with grey border-->
 
-    <p class="solid">
+    <p class="quote">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam explicabo fugiat quis praesentium id voluptate cumque exercitationem odio aliquam, facere eligendi modi minus porro ducimus consequuntur laboriosam quas tempore.
     </p>
 
@@ -78,18 +77,17 @@
 
     <!--progress bars-->
 
-    <div class="progress-container-1">
-        <div class="progress-box-1">
+    <div class="progress">
+        <div class="progress__column">
 
-            <div class="progress-container-2">
-                    <div class="progress-box-2">
+                    <div class="progress__row">
 
-                        <div class="progress-container-3">
-                            <div class="progress-box-3">
+                        <div class="progress__row--content">
+                            <div class="progress__row--text">
                                 <h6>Eget sapien</h6>
                             </div>
 
-                            <div class="progress-box-4">
+                            <div class="progress__row--bar">
                                 <progress value="50" max="100">
                                 </progress>
                             </div>
@@ -97,14 +95,14 @@
                         </div>
                     </div>
 
-                    <div class="progress-box-2">
+                    <div class="progress__row">
 
-                        <div class="progress-container-3">
-                                <div class="progress-box-3">
+                        <div class="progress__row--content">
+                                <div class="progress__row--text">
                                     <h6>Lorem ipsum</h6>
                                 </div>
             
-                                <div class="progress-box-4">
+                                <div class="progress__row--bar">
                                     <progress value="80" max="100">
                                     </progress>
                                 </div>
@@ -112,14 +110,14 @@
 
                     </div>
 
-                    <div class="progress-box-2">
+                    <div class="progress__row">
 
-                            <div class="progress-container-3">
-                                    <div class="progress-box-3">
+                            <div class="progress__row--content">
+                                    <div class="progress__row--text">
                                         <h6>Quam et felis</h6>
                                     </div>
                 
-                                    <div class="progress-box-4">
+                                    <div class="progress__row--bar">
                                         <progress value="20" max="100">
                                         </progress>
                                     </div>
@@ -127,21 +125,18 @@
     
                     </div>
 
-            </div>
-
         </div>
 
-        <div class="progress-box-1">
+        <div class="progress__column">
 
-                <div class="progress-container-2">
-                        <div class="progress-box-2">
+                        <div class="progress__row">
     
-                            <div class="progress-container-3">
-                                <div class="progress-box-3">
+                            <div class="progress__row--content">
+                                <div class="progress__row--text">
                                     <h6>Eget sapien</h6>
                                 </div>
     
-                                <div class="progress-box-4">
+                                <div class="progress__row--bar">
                                     <progress value="30" max="100">
                                     </progress>
                                 </div>
@@ -149,14 +144,14 @@
                             </div>
                         </div>
     
-                        <div class="progress-box-2">
+                        <div class="progress__row">
     
-                            <div class="progress-container-3">
-                                    <div class="progress-box-3">
+                            <div class="progress__row--content">
+                                    <div class="progress__row--text">
                                         <h6>Lorem ipsum</h6>
                                     </div>
                 
-                                    <div class="progress-box-4">
+                                    <div class="progress__row--bar">
                                         <progress value="50" max="100">
                                         </progress>
                                     </div>
@@ -164,14 +159,14 @@
     
                         </div>
     
-                        <div class="progress-box-2">
+                        <div class="progress__row">
     
-                                <div class="progress-container-3">
-                                        <div class="progress-box-3">
+                                <div class="progress__row--content">
+                                        <div class="progress__row--text">
                                             <h6>Quam et felis</h6>
                                         </div>
                     
-                                        <div class="progress-box-4">
+                                        <div class="progress__row--bar">
                                             <progress value="90" max="100">
                                             </progress>
                                         </div>
@@ -179,11 +174,7 @@
         
                         </div>
     
-                </div>
-    
-        </div>
-
-
+            </div>
 
     </div>
 
@@ -193,15 +184,15 @@
 
     <!--form boxes-->
 
-    <div class="form-container-1">
-        <div class="form-box-1">
+    <div class="form-top">
+        <div class="form-top__column">
 
-            <div class="form-container-2">
-                    <div class="form-box-2">
+            <div class="form-top__column--left">
+                    <div class="form-top__row">
                         <h3></h3>
                     </div>
 
-                    <div class="form-box-2">
+                    <div class="form-top__row">
                         <h3></h3>
                     </div>
 
@@ -209,14 +200,14 @@
 
         </div>
 
-        <div class="form-box-1">
+        <div class="form-top__column">
 
-                <div class="form-container-2">
-                        <div class="form-box-2">
+                <div class="form-top__column--left">
+                        <div class="form-top__row">
                             <h3></h3>
                         </div>
     
-                        <div class="form-box-2">
+                        <div class="form-top__row">
                             <h3></h3>
                         </div>
     

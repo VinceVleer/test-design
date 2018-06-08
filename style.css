@@ -13,7 +13,7 @@ body {
 
 /*----------header---------*/
 
-div.header {
+.header {
     border-style: solid;
     border-width: 2px;
     border-color: #000;
@@ -38,88 +38,57 @@ a {
     margin-left: 60px;
 }
 
-/*----------grey boxes top--------*/
+/*----------featuered products--------*/
 
 .featured-products {
     display: flex;
     flex-direction: row;
-    background-color: white;
     height: 500px;
+    margin-bottom: 100px;
 }
 
-.flex-container-2 {
+.featured-products__column--left,
+.featured-products__column--right {
     display: flex;
     flex-direction: column;
-    background-color: white;
     height: 500px;
 }
   
-.flex-container-2 > div {
+.featured-products__column--left > div {
     background-color: #bdbdbd;
     margin: 10px;
     font-size: 30px;
 }
-
-.flex-container-3 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    height: 500px;
-}
   
-.flex-container-3 > .grey-box-3 {
+.featured-products__column--right > .featured-products__item--large {
     background-color: #bdbdbd;
     margin: 10px;
     font-size: 30px;
     flex-wrap: wrap;
 }
 
-.flex-container-4 {
+.featured-products__column--bottom {
     display: flex;
     background-color: white;
 }
   
-.flex-container-4 > div {
+.featured-products__column--bottom > div {
     background-color: #bdbdbd;
     margin: 10px;
     font-size: 30px;
     height: 250px;
 }
 
-.box-1 {
+.featured-products__column,
+.featured-products__wrapper,
+.featured-products__item--small,
+.featured-products__item--large {
     flex:1;
 }
 
-.box-2 {
+.featured-products__column--right,
+.featured-products__item {
     flex:2;
-}
-
-.box-3 {
-    flex:1;
-}
-
-.box-4 {
-    flex:1;
-}
-
-.grey-box-1 {
-    flex:2;
-}
-
-.grey-box-2 {
-    flex:1;
-}
-
-.grey-box-3 {
-    flex:1;
-}
-
-.grey-box-4 {
-    flex:1;
-}
-
-.grey-box-5 {
-    flex:1;
 }
 
 .box__image {
@@ -128,7 +97,19 @@ a {
     object-fit: cover;
 }
 
-/*----------text--------*/
+.box__image--large {
+    width: 648;
+    height: 210;
+    object-fit: cover;
+}
+
+.box__image--small {
+    width: 314;
+    height: 210;
+    object-fit: cover;
+}
+
+/*----------quote--------*/
 
 h3 {
     color: #666666;
@@ -140,7 +121,7 @@ h3 {
     text-align: center;
 }
 
-p.solid {
+p.quote {
     border-style: solid;
     border-width: 2px 2px 2px 10px;
     border-color: #bbbbbb;
@@ -158,21 +139,34 @@ p.solid {
 
 /*----------progress boxes--------*/
 
-.progress-container-1 {
+.progress {
     display: flex;
     background-color: white;
 }
 
-.progress-container-2 {
+.progress__column {
+    flex:1;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
-.progress-container-3 {
+.progress__row {
+    flex:1;
+}
+
+.progress__row--content {
     display: flex;
     flex-direction: row;
     background-color: white;
+}
+
+.progress__row--text {
+    flex:1;
+}
+
+.progress__row--bar {
+    flex:1;
 }
 
 /*
@@ -183,29 +177,8 @@ p.solid {
     padding: 20px;
     font-size: 30px;
     height: 50px;
-
 }
 */
-
-.progress-box-1 {
-    flex:1;
-}
-
-.progress-box-2 {
-    flex:1;
-}
-
-.progress-box-3 {
-    flex:1;
-}
-
-.progress-box-4 {
-    flex:1;
-}
-
-.progress-box-5 {
-    flex:1;
-}
 
 h6 {
     font-family: Arial, Helvetica, sans-serif;
@@ -215,29 +188,29 @@ h6 {
 
 /*----------form boxes--------*/
 
-.form-container-1 {
+.form-top {
     display: flex;
     flex-direction: row;
     background-color: white;
 }
 
-.form-container-2 {
+.form-top__column--left {
     display: flex;
     flex-direction: column;
     background-color: white;
 }
   
-.form-container-2 > div {
+.form-top__column--left > div {
     background-color: #bdbdbd;
     margin: 10px;
     font-size: 30px;
 }
 
-.form-box-1 {
+.form-top__column {
     flex:1;
 }
 
-.form-box-2 {
+.form-top__row {
     flex:1;
 }
 
