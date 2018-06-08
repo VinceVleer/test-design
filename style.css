@@ -31,7 +31,7 @@ nav {
     margin-left: 50%;
 }
 
-a {
+.header__nav-link{
     color: #666666;
     font-family: "Arial";
     font-size: 16px;
@@ -47,19 +47,18 @@ a {
     margin-bottom: 100px;
 }
 
-.featured-products__column--left,
-.featured-products__column--right {
+.featured-products__column {
     display: flex;
     flex-direction: column;
     height: 500px;
 }
-  
+
 .featured-products__column--left > div {
     background-color: #bdbdbd;
     margin: 10px;
     font-size: 30px;
 }
-  
+
 .featured-products__column--right > .featured-products__item--large {
     background-color: #bdbdbd;
     margin: 10px;
@@ -71,7 +70,7 @@ a {
     display: flex;
     background-color: white;
 }
-  
+
 .featured-products__column--bottom > div {
     background-color: #bdbdbd;
     margin: 10px;
@@ -139,46 +138,30 @@ p.quote {
 
 /*----------progress boxes--------*/
 
-.progress {
+.skills {
     display: flex;
     background-color: white;
 }
 
-.progress__column {
+.skills__column {
     flex:1;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
-.progress__row {
+.skills__row,
+.skills__bar,
+.skills__text
+ {
     flex:1;
 }
 
-.progress__row--content {
+.skills__header {
     display: flex;
     flex-direction: row;
     background-color: white;
 }
-
-.progress__row--text {
-    flex:1;
-}
-
-.progress__row--bar {
-    flex:1;
-}
-
-/*
-.progress-container-3 > div {
-
-    background-color: #bdbdbd;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    height: 50px;
-}
-*/
 
 h6 {
     font-family: Arial, Helvetica, sans-serif;
@@ -186,7 +169,14 @@ h6 {
     margin-top: -10px;
 }
 
-/*----------form boxes--------*/
+progress {
+    width: 220px;
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/*----------form--------*/
 
 .form-top {
     display: flex;
@@ -206,73 +196,47 @@ h6 {
     font-size: 30px;
 }
 
-.form-top__column {
-    flex:1;
-}
-
+.form-top__column,
 .form-top__row {
     flex:1;
 }
 
-.form-box-3 {
-    flex:1;
-}
-
-.form-box-4 {
-    flex:1;
-}
-
-.form-box-5 {
-    flex:1;
-}
-
-.form-box-6 {
-    flex:1;
-}
-
-.form-box-7 {
-    flex:1;
-}
-
-.form-container-3 {
+.form-bottom {
     display: flex;
     flex-direction: row;
     background-color: white;
 }
-  
-/*
-.form-container-3 > .form-box-3 {
-    background-color: #bdbdbd;
-    margin: 10px;
-    height: 200px;
-}
-*/
 
-.form-container-4 {
+.form-bottom__column,
+.form-bottom__grey,
+.form-bottom__checkbox,
+.form-bottom__submit {
+    flex:1;
+}
+
+.form-bottom_column--big {
     display: flex;
     flex-direction: row;
-    /*background-color: red;*/
     height: 210px;
 }
   
-.form-container-4 > div {
+.form-bottom_column--big > div {
     background-color: #bdbdbd;
     margin: 10px;
 }
 
-.form-container-5 {
+.form-bottom__collumn-left {
     display: flex;
     flex-direction: column;
-    /*background-color: blue;*/
     height: 210px;
 }
 
-.form-container-5 > div {
+.form-bottom__collumn-left > div {
     background-color: white;
     margin: 10px;
 }
   
-.form-container-5 > div.form-box-5 {
+.form-bottom__collumn-left > div.form-bottom__grey {
     background-color: #bdbdbd;
     margin: 10px;
 }
@@ -284,11 +248,11 @@ h6 {
     margin-left: 330px;
 }
 
-.checkBox {
+.check-box {
     margin-left: 10px;
 }
 
-.checkBoxText {
+.check-box-text {
     margin-left: 5px;
     font-family: "Arial";
 }
@@ -311,19 +275,12 @@ h6 {
     margin-top: 25px;
 }
 
-.copyright {
+.footer__copyright {
     margin-right: 680px;
 }
 
-.footer-box {
+.footer__box {
     background-color:rgb(184, 184, 184);
     padding: 5px 30px 5px 30px;
     margin-right: 20px;
 }
-
-progress {
-    width: 220px;
-    height: 3px;
-    -webkit-appearance: none;
-    appearance: none;
-  }
