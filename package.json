@@ -1,0 +1,29 @@
+{
+  "name": "test-design",
+  "version": "1.0.0",
+  "description": "Test repository for Competa Design",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceVleer/test-design.git"
+  },
+  "author": "Vince",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceVleer/test-design/issues"
+  },
+  "homepage": "https://github.com/VinceVleer/test-design#readme"
+}

@@ -1,0 +1,278 @@
+$ff: Arial, Helvetica, sans-serif;
+$style1: #bdbdbd;
+$style2: #666666;
+$style3: rgb(65, 65, 65);
+
+body {
+    background-color: whitesmoke;
+    padding-top:40px;
+    margin:0px;
+}
+
+/*----------center content--------*/
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*----------header---------*/
+
+.header {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    color: $style2;
+    font-family: $ff;
+    height:40px;
+    width:150px;
+
+    &__nav-link{
+        color: $style2;
+        font-family: $ff;
+        font-size: 16px;
+        margin-left: 60px;}
+}
+
+nav {
+    position: relative;
+    top: -50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+}
+
+/*----------featured products--------*/
+
+.featured-products {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin-bottom: 100px;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+
+        &--right > .featured-products__item--large {
+            background-color: $style1;
+            margin: 10px;
+            font-size: 30px;
+            flex-wrap: wrap;
+        }
+
+        &--left > div {
+            background-color: $style1;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        &--bottom {
+            display: flex;
+
+            div {
+                background-color: $style1;
+                margin: 10px;
+                font-size: 30px;
+                height: 250px;
+            }
+        }
+    }
+
+    &__column,
+    &__wrapper,
+    &__item--small,
+    &__item--large {
+        flex:1;
+    }
+
+    &__column--right,
+    &__item {
+        flex:2;
+    }
+}
+
+.box__image {
+    width: 314px;
+    height: 307px;
+    object-fit: cover;
+
+    &--large {
+        width: 648;
+        height: 210;
+        object-fit: cover;
+    }
+
+    &--small {
+        width: 314;
+        height: 210;
+        object-fit: cover;
+    }
+
+}
+
+/*----------quote--------*/
+
+h3 {
+    color: $style2;
+    font-family: $ff;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+p.quote {
+    border-style: solid;
+    border-width: 2px 2px 2px 10px;
+    border-color: $style1;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px 115px 50px 115px;
+    text-align: center;
+    color: $style2;
+    font-family: $ff;
+}
+
+/*----------progress boxes--------*/
+
+.skills {
+    display: flex;
+
+    &__column {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row,
+    &__bar,
+    &__text{
+        color: $style2;
+        flex:1;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+h6 {
+    font-family: $ff;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+progress {
+    width: 220px;
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/*----------form--------*/
+
+.form-top {
+    display: flex;
+    flex-direction: row;
+
+    &__column--left {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            background-color: $style1;
+            margin: 10px;
+            font-size: 30px;
+        }
+    }
+
+    &__column,
+    &__row {
+        flex:1;
+    }
+}
+
+.form-bottom {
+    display: flex;
+    flex-direction: row;
+
+    &__column,
+    &__grey,
+    &__checkbox,
+    &__submit {
+        flex:1;
+    }
+
+    &__column--big {
+        display: flex;
+        flex-direction: row;
+        height: 210px;
+
+        div {
+            background-color: $style1;
+            margin: 10px;
+        }
+    }
+
+    &__collumn-left {
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+
+        div {
+            margin: 10px;
+        }
+    }
+
+    &__collumn-left > div.form-bottom__grey {
+        background-color: $style1;
+        margin: 10px;
+    }
+
+    .form {
+        background-color:$style3;
+        width: 150px;
+        height:50px;
+        margin: 0px 0px 0px 330px;
+    }
+}
+
+.check-box {
+    margin-left: 10px;
+
+    &__text {
+        margin-left: 5px;
+        font-family: $ff;
+    }
+}
+
+/*----------footer--------*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $style3;
+    color: $style1;
+    font-family: $ff;
+
+    div {
+        margin-left:270px;
+        margin-top: 25px;
+        }
+
+    &__copyright {
+        margin-right: 680px;}
+
+    &__box {
+        background-color:$style1;
+        padding: 5px 30px 5px 30px;
+        margin-right: 20px;}
+}
